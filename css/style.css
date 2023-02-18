@@ -637,9 +637,53 @@ footer {
   right: 10px;
   width: 300px;
   height: 169px;
+  z-index: 9998;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
   z-index: 9999;
 }
 
+.live-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.is-closed .live-button {
+  display: flex;
+}
+
+.is-closed .close-button {
+  display: none;
+}
+
+.is-closed iframe {
+  display: none;
+}
 
 /* Media queries */
 
