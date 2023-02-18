@@ -201,7 +201,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
+  overflow: scroll;
   margin-bottom: 20px;
   overflow-y: auto; /* Add this line to make the text scrollable */
 }
@@ -613,7 +613,7 @@ footer {
 
 .map-section {
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .map-container {
