@@ -200,7 +200,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: scroll;
+  overflow: hidden;
   margin-bottom: 20px;
   overflow-y: auto; /* Add this line to make the text scrollable */
 }
@@ -612,7 +612,7 @@ footer {
 
 .map-section {
   position: relative;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .map-container {
@@ -637,7 +637,7 @@ footer {
   right: 10px;
   width: 300px;
   height: 169px;
-  z-index: 9998;
+  z-index: 1;
 }
 
 .close-button {
@@ -652,7 +652,7 @@ footer {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  z-index: 0;
+  z-index: 1;
 }
 
 .live-button {
@@ -667,7 +667,7 @@ footer {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  z-index: 1;
+  z-index: 9999;
   display: none;
   align-items: center;
   padding: 5px 10px;
