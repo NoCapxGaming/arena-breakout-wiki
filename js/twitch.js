@@ -22,6 +22,7 @@ closeButton.addEventListener('click', () => {
     closeButton.innerHTML = '<i class="fas fa-play"></i>';
     liveButton.style.display = 'flex';
     twitchEmbedContainer.style.zIndex = -1;
+    liveButton.style.zIndex = 999;
   }
 });
 
