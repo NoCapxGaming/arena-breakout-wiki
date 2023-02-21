@@ -338,7 +338,7 @@ main {
 }
 
 .video-container {
-  position: relative;
+  position: absolute;
   padding-bottom: 56.25%;
   /* 16:9 aspect ratio */
   padding-top: 25px;
@@ -616,7 +616,7 @@ footer {
 }
 
 .map-section {
-  position: relative;
+  position: absolute;
   overflow: scroll;
 }
 
@@ -651,7 +651,7 @@ footer {
   right: 5px;
   width: 20px;
   height: 20px;
-  color: #fff;
+  color: black;
   border: none;
   border-radius: 50%;
   font-size: 16px;
@@ -661,32 +661,28 @@ footer {
 }
 
 .live-button {
-  position: absolute;
+  position: fixed !important;
   bottom: 0;
   right: 0;
   width: auto;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
+  height: 5%;
+  background-color: rgb(255, 255, 255, .8);
+  color: #6441a5;
   border: none;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  z-index: 9999;
-  display: none;
+  z-index: 1;
   align-items: center;
   padding: 5px 10px;
 }
 
 .is-closed .live-button {
   display: flex;
+
 }
 
 .is-closed .close-button {
-  display: none;
-}
-
-.is-closed iframe {
   display: none;
 }
 
