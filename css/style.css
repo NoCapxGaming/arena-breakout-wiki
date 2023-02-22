@@ -754,6 +754,86 @@ footer {
  .reward-image-container:hover .reward-image {
    transform: scale(1.1);
  }
+
+ .weapon-info {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 2rem;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+ }
+
+ .weapon-image-container {
+   max-width: 100%;
+   margin-bottom: 1rem;
+ }
+
+ .weapon-image {
+   max-width: 100%;
+   height: auto;
+ }
+
+ .weapon-details {
+   max-width: 80%;
+   text-align: center;
+ }
+
+ .weapon-name {
+   font-size: 2rem;
+   margin-bottom: 1rem;
+ }
+
+ .weapon-stats {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+
+ .weapon-stat {
+   width: calc((100% - 4rem) / 3);
+   margin-bottom: 1rem;
+ }
+
+ .weapon-stat-name {
+   display: inline-block;
+   padding: 0.5rem;
+   background-color: #333;
+   color: #fff;
+   border-radius: 8px 0 0 8px;
+   font-weight: bold;
+ }
+
+ .weapon-stat-value {
+   display: inline-block;
+   margin-left: auto;
+   padding: 0.5rem;
+   background-color: #fff;
+   border-radius: 0 8px 8px 0;
+   color: green;
+ }
+
+ @media screen and (max-width: 768px) {
+   .weapon-info {
+     padding: 1rem;
+   }
+
+   .weapon-image-container {
+     max-width: 100%;
+     margin-bottom: 1rem;
+   }
+
+   .weapon-stats {
+     flex-wrap: wrap;
+   }
+
+   .weapon-stat {
+     width: 100%;
+   }
+ }
+
+
 /* Media queries */
 
 
