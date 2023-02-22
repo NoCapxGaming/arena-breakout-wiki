@@ -23,11 +23,11 @@ homeItem.innerHTML = '<a href="https://www.arenabreakout.wiki/index.html">Inicio
 
 const directoryItem = document.createElement('li');
 directoryItem.className = 'navbar-item';
-directoryItem.innerHTML = '<a href="https://www.arenabreakout.wiki/content/gakllery/directory.html">Directorio</a>';
+directoryItem.innerHTML = '<a href="https://www.arenabreakout.wiki/content/directory/directory.html">Directorio</a>';
 
 const galleryItem = document.createElement('li');
 galleryItem.className = 'navbar-item';
-galleryItem.innerHTML = '<a href="https://www.arenabreakout.wiki/content/directory/gallery.html">Galeria</a>';
+galleryItem.innerHTML = '<a href="https://www.arenabreakout.wiki/content/gallery/gallery.html">Galeria</a>';
 
 const aboutItem = document.createElement('li');
 aboutItem.className = 'navbar-item';
